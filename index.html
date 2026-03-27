@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Aerospace Satellite Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="Cesium/Widgets/widgets.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1>🌍 Aerospace Satellite Tracker</h1>
+
+<input type="text" id="satellite" placeholder="Enter satellite name">
+<button onclick="trackSatellite()">Search</button>
+
+<p id="satName">Satellite:</p>
+<p id="satSpeed">Speed:</p>
+<p id="satAltitude">Altitude:</p>
+
+<div id="cesiumContainer" style="width:100%; height:600px;"></div>
+
+<script src="Cesium/Cesium.js"></script>
+<script src="https://unpkg.com/satellite.js/dist/satellite.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
